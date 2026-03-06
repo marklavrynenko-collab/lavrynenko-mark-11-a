@@ -1,0 +1,59 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* контейнер меню */
+.menu {
+	margin-top: 20px;
+}
+
+/* кнопки */
+.menu a {
+	text-decoration: none;
+	background-color: #da70d6;
+	color: white;
+	
+	padding: 12px 18px;
+	margin-right: 8px;
+	
+	border-radius: 10px;
+	display: inline-block;
+}
+
+/* hover ефект */
+.menu a:hover {
+	background-color: #da70d6;
+}
+/* блок з підменю */
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+/* випадаючий список */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	
+	background-color: white;
+	min-width: 140px;
+	
+	border-radius: 8p;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* кнопки в підменю */
+.dropdown-content a {
+	display: block;
+	background-color: #f1f1f1;
+	color: black;
+	margin: 5px;
+	border-radius: 6px;
+}
+
+/* показ підменю при наведенні */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
