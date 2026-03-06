@@ -2,55 +2,156 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-	<title>Кіберспортивна команда</title>
-	<link rel="stylesheet" href="style.css">
+    <title>NAVI – Кіберспортивна команда</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Головна</h1>
+<h1>NAVI – Natus Vincere</h1>
 
 <nav class="menu">
-    <a href="#">Новини</a>
-	
-	<div class="dropdown">
-	    <a href="#">Матчі ▼</a>
-		<div class="dropdown-content">
-		    <a href="#">Майбутні</a>
-		    <a href="#">Сьогодні</a>
-		    <a href="#">Минулі</a>
+    <a href="#about">Про нас</a>
+    <a href="#news">Новини</a>
+
+    <div class="dropdown">
+        <a href="#teams">Склади ▼</a>
+        <div class="dropdown-content">
+            <a href="#cs2">CS2</a>
+            <a href="#dota2">Dota 2</a>
+            <a href="#valorant">Valorant</a>
         </div>
-	</div>
-	
-	<div class="dropdown">
-	    <a href="#">Форум ▼</a>
-		<div class="dropdown-content">
-		    <a href="#">CS:2</a>
-		    <a href="#">Dota 2</a>
-		    <a href="#">Valorant</a>
-        </div>
-	</div>
-	
-	<div class="dropdown">
-	    <a href="#">Нагороди ▼</a>
-		<div class="dropdown-content">
-		    <a href="#">2026</a>
-		    <a href="#">2025</a>
-		    <a href="#">2024</a>
-        </div>
-	</div>
-	
-	<div class="dropdown">
-	    <a href="#">Налаштування ▼</a>
-		<div class="dropdown-content">
-		    <a href="#">Мій профіль</a>
-		    <a href="#">Налаштування</a>
-		    <a href="#">Контакти</a>
-        </div>
-	</div>
-	
+    </div>
+
+    <a href="#tournaments">Турніри</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#contacts">Контакти</a>
 </nav>
+
+<!-- Банер -->
+<section class="banner">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" width="50%">
+    <p style="text-align:center; margin-top: 15px;">
+        <strong>NAVI (Natus Vincere)</strong> — одна з найвідоміших кіберспортивних організацій у світі.
+        Заснована у 2009 році, команда стала символом професійності, дисципліни та жаги до перемоги.
+    </p>
+</section>
+
+<!-- Про команду -->
+<section id="about">
+    <h2>Про організацію</h2>
+    <div style="text-align:center;">
+        <img src="https://visitukraine.today/media/blog/previews/9qW3RMyBoFfYTRIoNHhzVq7nkMmlEU10xu2O8yfd.webp" width="350">
+    </div>
+    <p>
+        NAVI — міжнародний бренд у кіберспорті. Команда брала участь у сотнях міжнародних турнірів і здобула десятки чемпіонських титулів.
+    </p>
+    <p>
+        Основні дисципліни: Counter-Strike 2, Dota 2, Valorant. Команда відома своїми легендарними гравцями та історичними перемогами.
+    </p>
+</section>
+
+<!-- Новини -->
+<section id="news">
+    <h2>Останні новини</h2>
+    <article>
+        <h3>Фінал Major CS2</h3>
+        <img src="https://egamersworld.com/cdn-cgi/image/width=690,quality=75,format=webp/uploads/content/1/17/1765147018591_resized.jpg" width="300" style="display:block; margin:10px auto;">
+        <p>NAVI проходить до фіналу Major CS2 після перемоги над топовими суперниками.</p>
+    </article>
+    <article>
+        <h3>Оновлення складу Dota 2</h3>
+        <img src="https://images.unsplash.com/photo-1580327344181-c1163234e5a0" width="300" style="display:block; margin:10px auto;">
+        <p>Представлено нового гравця у складі NAVI Dota 2, команда готується до міжнародних турнірів.</p>
+    </article>
+</section>
+
+<!-- Склади -->
+<section id="teams">
+    <h2>Основні склади</h2>
+
+    <h3 id="cs2">CS2</h3>
+    <div style="text-align:center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Counter_Strike_2_Logo.png" width="200">
+    </div>
+    <p>Склад CS2 регулярно входить до топ-5 світового рейтингу. Команда демонструє високий рівень тактики та командної гри.</p>
+
+    <h3 id="dota2">Dota 2</h3>
+    <div style="text-align:center;">
+        <img src="https://images.seeklogo.com/logo-png/37/1/valorant-logo-png_seeklogo-379976.png" width="200">
+    </div>
+    <p>NAVI Dota 2 відома своїми виступами на міжнародних турнірах та стабільною грою проти найсильніших команд світу.</p>
+
+    <h3 id="valorant">Valorant</h3>
+    <div style="text-align:center;">
+        <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf" width="200">
+    </div>
+    <p>Valorant-склад активно розвивається та бере участь у європейських лігах і чемпіонатах.</p>
+</section>
+
+<!-- Гравці (новий блок для заповнення простору) -->
+<section id="players">
+    <h2>Гравці</h2>
+    <div style="display:flex; justify-content:space-around; flex-wrap:wrap;">
+        <div style="margin:10px; text-align:center;">
+            <img src="https://www.prosettings.gg/wp-content/uploads/2021/09/s1mple-cs2-player-profile-picture-Natus-Vincere-288x300.webp" width="150">
+            <p><strong>s1mple</strong><br>CS2 – AWP</p>
+        </div>
+        <div style="margin:10px; text-align:center;">
+            <img src="https://img-cdn.hltv.org/playerbodyshot/9qh2YbZOLfeIAPCYfgxAd3.png?ixlib=java-2.1.0&w=400&s=cef57317978ef255ee2c48e322c25560" width="150">
+            <p><strong>b1t</strong><br>CS2 – Rifler</p>
+        </div>
+        <div style="margin:10px; text-align:center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnP4PYxQOQDZKzupMitW6PXjBGddj4nwoMEg&s" width="150">
+            <p><strong>Jame</strong><br>Dota 2 – Support</p>
+        </div>
+        <div style="margin:10px; text-align:center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx9ivULr0zysl_z44mIzcw1z4G2VpL-IQi6g&s" width="150">
+            <p><strong>Derke</strong><br>Valorant – Duelist</p>
+        </div>
+    </div>
+</section>
+
+<!-- Турніри -->
+<section id="tournaments">
+    <h2>Останні турніри</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around;">
+        <div style="margin:10px; text-align:center;">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420" width="250">
+            <p>🏆 Major Championship – 1 місце</p>
+        </div>
+        <div style="margin:10px; text-align:center;">
+            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f" width="250">
+            <p>🥈 ESL Pro League – 2 місце</p>
+        </div>
+        <div style="margin:10px; text-align:center;">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" width="250">
+            <p>🥉 BLAST Premier – 3 місце</p>
+        </div>
+    </div>
+</section>
+
+<!-- Галерея -->
+<section id="gallery">
+    <h2>Галерея</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around;">
+        <img src="https://img.sportarena.com/2026/02/navi-BLAST-slam.png" width="300";>
+        <img src="https://kosivrada.if.ua/wp-content/uploads/2025/02/NAVI.jpg" width="300";>
+        <img src="https://pic.sport.ua/images/news/0/18/123/orig_744747.jpg" width="300";>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiW8PtGv14uHuLBg3VCDgYDRnbeSW16nVBgw&s" width="300";>
+    </div>
+</section>
+
+<!-- Контакти -->
+<section id="contacts">
+    <h2>Контакти</h2>
+    <p>Email: info@navi.gg</p>
+    <p>Офіційний сайт: https://navi.gg</p>
+    <p>Instagram | Twitter | YouTube</p>
+</section>
+
+<footer>
+    <p>© 2026 NAVI. Всі права захищені.</p>
+</footer>
 
 </body>
 </html>
-
-		
